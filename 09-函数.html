@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 * alert('哈哈')  prompt()  console.log()  parseInt() document.write()
+			 * 
+			 * 函数: 也叫方法,是将一对相同的代码封装起来,可以反复的使用,避免代码冗余
+			 * 定义函数:
+			 * function 关键字   函数名 小括号 
+			 * 小括号(参数)
+			 * 在调用的函数中的参数,叫做实际参数
+			 * 在定义的函数中的参数,叫形式参数,形式参数相当于在函数体中隐式的声明了一个变量,被
+			 * 实际参数中的数据赋值
+			 * 形式参数的个数和实际参数是一一对应的.
+			 * 大括号是函数体
+			 * 调用函数: 调用可以在定义之前或之后
+			 * 函数名();
+			 */
+			
+			 offer('张明举','阿里杭州分部',35000,5,'前端主管');
+			
+			//定义函数   
+			//在定义的函数中的参数,叫形式参数
+			function offer(name,company,salary,num,posi){
+				// var name = '赵晓虎';
+				//var company = '阿里';
+				alert('恭喜0318班'+name+'同学高薪就业,就职于'+company);
+				alert('就业薪资'+salary+'元,包吃住,赠送充气娃娃'+num+'枚');
+				alert('任职'+posi);
+			}
+			
+			//调用函数 
+			//在调用的函数中的参数,叫做实际参数
+			offer('赵晓虎','阿里',30000,1,'前端工程师');
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

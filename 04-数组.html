@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 * 数组: 一组有序数据的集合.可以存储任意类型的数据,数组中的每个数据也叫元素
+			 * 索引值:数组可以通过数组名[索引值]的方式来访问其中的某一个元素
+			 * 数组的长度: 数组名.length,最大索引值是arr.length-1
+			 * 在数组中避免出现跨索引的存储,当没有给元素赋值的时候,值是undefined
+			 * 
+			 */
+//			var num = 5;
+//			num = '老刘';
+			//创建数组的第一种方式:字面量方式
+			var arr = ['哈哈',10,true,new Object(),'呵呵'];
+			console.log(arr[1]);
+			arr[1] = '老刘';
+			arr[5] = '5号女嘉宾';
+//			arr[10] = '10号';
+			arr.length = 20;
+			console.log(arr.length);
+			console.log(arr);
+			
+			//创建数组的第二种方式: new Array
+			var arr2 = new Array('哈哈',10,true,new Object(),'呵呵');
+			console.log(arr2);
+			
+			//创建数组的第三种方式: new Array
+			var arr3 = new Array(5);
+			arr3.length = 20;
+			console.log(arr3);
+		</script>
+	</body>
+</html>

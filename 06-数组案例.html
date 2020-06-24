@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			//案例1:求数组中所有元素的和
+			var arr1 = [1, 2, 3, 4, 5];
+			//计数器
+			var sum = 0;
+			for(var i = 0; i < arr1.length; i++) {
+				sum += arr1[i]
+			}
+			console.log(sum);
+			//案例2:求数组中所有元素的平均值
+			console.log(sum / arr1.length);
+
+			//案例3:求数组中所有元素中的最大值
+			var arr2 = [2, 1, 5, 9, 7, 3];
+			//当前最大值,将数组的第一个元素的值赋值给max
+			var max = arr2[0];
+			for(var i = 1; i < arr2.length; i++) {
+				//如果max小于后面的元素中的值
+				if(max < arr2[i]) {
+					//将元素的值赋值给max
+					max = arr2[i];
+				}
+			}
+			console.log(max);
+			//案例4:求数组中所有元素中的最小值
+			var arr3 = [2, 1, 5, 9, 7, 3];
+			//当前最小值,将数组的第一个元素的值赋值给min
+			var min = arr2[0];
+			for(var i = 1; i < arr2.length; i++) {
+				//如果max小于后面的元素中的值
+				if(min > arr2[i]) {
+					//将元素的值赋值给max
+					min = arr2[i];
+				}
+			}
+			console.log(min);
+
+			//案例5:倒序遍历数组
+			var arr4 = ['周杰伦', '王力宏', '陶喆', '蔡依林', '林俊杰', '梁静茹'];
+
+			for(var i = arr4.length - 1; i >= 0; i--) {
+				console.log(arr4[i]);
+			}
+
+			//案例6:把数组中每个元素用|拼接到一起产生一个字符串并输出
+			var arr5 = ['周杰伦', '王力宏', '陶喆', '蔡依林', '林俊杰', '梁静茹', '老刘', '腾格尔'];
+			//字符串累加
+			var str = '';
+			for(var i = 0; i < arr5.length - 1; i++) {
+				str += arr5[i] + '|';
+			}
+
+			console.log(str + arr5[arr5.length - 1]);
+
+			// 周杰伦|王力宏|......|梁静茹
+			//案例7:去掉数组中的所有的元素0，把其他的数据放在一个新的数组中
+			
+			// 数组名[数组名.length] 可以动态的按照索引的顺序给数组添加新元素
+			var arr6 = [2, 0, 5, 0, 7, 3, 0, 4];
+			//新数组
+			var t = [];
+
+			for(var i = 0; i < arr6.length; i++) {
+				if(arr6[i] != 0) {
+					//					console.log(arr6[i]);
+					//插入新数组
+					t[t.length] = arr6[i];
+				}
+			}
+			console.log(t);
+
+			var arr7 = [];
+			//       
+			//			arr7[0] = '哈哈';
+			//			arr7[1] = '呵呵';
+			//			arr7[2] = '嘿嘿';
+			//			console.log(arr7.length);
+			arr7[arr7.length] = '哈哈';
+			arr7[arr7.length] = '呵呵';
+			arr7[arr7.length] = '嘿嘿';
+			//			console.log(arr7.length);
+			console.log(arr7);
+			// [2,5,7,3,4];
+		</script>
+	</body>
+
+</html>

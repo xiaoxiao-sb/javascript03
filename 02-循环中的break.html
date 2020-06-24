@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 * break关键字:当循环体中出现break时,会立刻跳出(离break最近的)循环体
+			 */
+//			for(var i = 0;i<10000;i++){
+//				console.log('哈哈');
+//				break;
+//			}
+
+//			for(var i = 0; i < 10; i++) {
+//				for(var j = 0; j < 10; j++) {
+//					console.log('呵呵');
+//					break;
+//				}
+//			}
+
+			/*
+			 * 打印1-100之间能被3整除的所有数
+			 */
+			
+//			for(var i = 1;i<=100;i++){
+//				if(i%3 == 0){
+//					console.log(i);
+//				}
+//			}
+			/*
+			 * 打印1-100之间能被3整除的第一个数
+			 */
+			
+//			for(var i = 1;i<=100;i++){
+//				if(i%3 == 0){
+//					console.log(i);
+//					break;
+//				}
+//			}
+			/*
+			 * 打印1-100之间能被3整除的前5个数
+			 */
+			//计数器
+//			var num = 0;
+//			for(var i = 1;i<=100;i++){
+//				if(i%3 == 0){
+//					num++;
+//					console.log(i);
+//					if(num == 5){
+//						break;
+//					}
+//				}
+//			}
+			//计数器
+			var num = 0;
+			for(var i = 1;i<=100;i++){
+				if(i%3 == 0){
+					num++;
+					console.log(i);
+				}
+				if(num == 5){
+					break;
+				}
+			}
+		</script>
+	</body>
+</html>
